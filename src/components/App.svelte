@@ -7,8 +7,8 @@
   let countryData = {}; // Object to store internet usage data by country
 
   onMount(() => {
-    const width = window.innerWidth;
-    const height = window.innerHeight;
+    const width = 1000;
+    const height = 1000;
 
     // The svg
     svg = d3.select("#my_dataviz")
@@ -80,6 +80,7 @@
     const tooltip = d3.select("body").append("div")
       .attr("class", "tooltip")
       .style("position", "absolute")
+      .style("font-family", "Nunito, sans-serif")
       .style("background-color", "white")
       .style("padding", "10px")
       .style("border", "1px solid black")
@@ -124,15 +125,25 @@
 </script>
 
 <main>
-  <svg id="my_dataviz"></svg>
+  <h1>World Internet Usage by Year</h1>
+  <svg id="my_dataviz">
+  </svg>
+  <div class="text">
+    <p>Sourced from the Department of Economic and Social Affairs of the UN Secretariat</p>
+  </div>
   <div class="year-buttons">
-    <button on:click={() => changeYear(2000)}>2000</button>
-    <button on:click={() => changeYear(2005)}>2005</button>
-    <button on:click={() => changeYear(2010)}>2010</button>
-    <button on:click={() => changeYear(2015)}>2015</button>
-    <button on:click={() => changeYear(2019)}>2019</button>
-    <button on:click={() => changeYear(2020)}>2020</button>
-    <button on:click={() => changeYear(2021)}>2021</button>
+    <button class="hoverable" on:click={() => changeYear(2000)}>2000</button>
+    <button class="hoverable" on:click={() => changeYear(2005)}>2005</button>
+    <button class="hoverable" on:click={() => changeYear(2010)}>2010</button>
+    <button class="hoverable" on:click={() => changeYear(2015)}>2015</button>
+    <button class="hoverable" on:click={() => changeYear(2019)}>2019</button>
+    <button class="hoverable" on:click={() => changeYear(2020)}>2020</button>
+    <button class="hoverable" on:click={() => changeYear(2021)}>2021</button>
+  </div>
+  <div class="rectangle">
+    <p style="color:#CFD8E4;">100%</p>
+    <p>50%</p>
+    <p>0%</p>
   </div>
 </main>
 
@@ -146,15 +157,22 @@
     position: relative; /* Required for absolute positioning */
   }
 
+  h1 {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  }
+
   svg {
+    position: relative;
     display: block;
     width: 100%;
     height: 100%;
+    margin-left: 90px;
   }
 
   .year-buttons {
-    position: absolute;
-    bottom: 20px; /* Adjust as needed */
+    position: relative;
+    bottom: 400px; /* Adjust as needed */
     left: 50%;
     transform: translateX(-50%); /* Center horizontally */
     display: flex;
@@ -166,6 +184,44 @@
   }
 
   .tooltip {
-    font-size: 14px;
+    font: 14px;
   }
+
+  .hoverable {
+      background-color: #D1D1D1;
+      border: 2px solid #0D4D91;
+      color: black;
+      padding: 15px 32px;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 4px;
+      transition-duration: 0.5s;
+  }
+
+  .hoverable:hover {
+    background-color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+p {
+  font-family: "Nunito", sans-serif;
+  text-align: left;
+  position: relative;
+}
+
+.rectangle {
+  width: 50px; /* Set the width of the rectangle */
+  height: 500px; /* Set the height of the rectangle */
+  background-image: linear-gradient(#093A7A, white); /* Set the background color of the rectangle */
+  border: 1px solid #000;
+  margin: auto;
+
+}
+.rectangle p {
+  text-align: center;
+  margin-bottom: 215px;
+  margin-top: 5px;
+}
+
 </style>
