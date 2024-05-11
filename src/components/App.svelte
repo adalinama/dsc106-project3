@@ -51,7 +51,7 @@
           .attr("d", d3.geoPath()
             .projection(projection)
           )
-          .style("stroke", "#fff")
+          .style("stroke", "#444444")
           .style("stroke-width", "1px")
           .on("mouseover", handleMouseOver)
           .on("mouseout", handleMouseOut);
@@ -123,10 +123,12 @@
       .style("stroke-width", "1px");
   }
   
-  
+  function getClass(year) {
+    return selectedYear === year ? 'selected' : '';
+  }
 
   function changeYear(year) {
-    selectedYear = year;
+    selectedYear = year; // Your existing changeYear function
     updateMapData(selectedYear, d3.geoNaturalEarth1().scale(window.innerWidth / 1.3 / Math.PI).translate([window.innerWidth / 2, window.innerHeight / 2]));
   }
 
@@ -135,7 +137,7 @@
 
 <main>
   <div class="title-container">
-    <h1>World Internet Usage in the 21st Century</h1>
+    <h1>World Internet Usage in {selectedYear}</h1>
   </div>
   <div class="container">
     <svg id="my_dataviz"></svg>
@@ -151,13 +153,13 @@
     </div>
   </div>
   <div class="year-buttons">
-    <button class="hoverable" on:click={() => changeYear(2000)}>2000</button>
-    <button class="hoverable" on:click={() => changeYear(2005)}>2005</button>
-    <button class="hoverable" on:click={() => changeYear(2010)}>2010</button>
-    <button class="hoverable" on:click={() => changeYear(2015)}>2015</button>
-    <button class="hoverable" on:click={() => changeYear(2019)}>2019</button>
-    <button class="hoverable" on:click={() => changeYear(2020)}>2020</button>
-    <button class="hoverable" on:click={() => changeYear(2021)}>2021</button>
+    <button class="hoverable {selectedYear === 2000 ? 'selected' : ''}" on:click={() => changeYear(2000)}>2000</button>
+    <button class="hoverable {selectedYear === 2005 ? 'selected' : ''}" on:click={() => changeYear(2005)}>2005</button>
+    <button class="hoverable {selectedYear === 2010 ? 'selected' : ''}" on:click={() => changeYear(2010)}>2010</button>
+    <button class="hoverable {selectedYear === 2015 ? 'selected' : ''}" on:click={() => changeYear(2015)}>2015</button>
+    <button class="hoverable {selectedYear === 2019 ? 'selected' : ''}" on:click={() => changeYear(2019)}>2019</button>
+    <button class="hoverable {selectedYear === 2020 ? 'selected' : ''}" on:click={() => changeYear(2020)}>2020</button>
+    <button class="hoverable {selectedYear === 2021 ? 'selected' : ''}" on:click={() => changeYear(2021)}>2021</button>
   </div>
 </main>
 
@@ -260,6 +262,11 @@
 
   .year-buttons button {
     margin: 0 5px;
+  }
+
+  .year-buttons .hoverable.selected {
+    background-color: #0D4D91;
+    color: white;
   }
 
   .tooltip {
