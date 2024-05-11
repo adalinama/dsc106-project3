@@ -169,12 +169,12 @@
     text-align: center;
     z-index: 999; 
     pointer-events: none;
-    font-family: "Nunito", sans-serif; /* Apply Nunito font family */
+    font-family: "Nunito", sans-serif; 
   }
 
   h1 {
     margin: 0;
-    font-family: "Nunito", sans-serif; /* Apply Nunito font family */
+    font-family: "Nunito", sans-serif; 
     font-size: 24px;
   }
 
@@ -200,7 +200,7 @@
     padding: 5px;
     border: 1px solid #ccc;
     pointer-events: none;
-    font-family: "Nunito", sans-serif; /* Apply Nunito font family */
+    font-family: "Nunito", sans-serif; 
   }
 
   .legend h2 {
