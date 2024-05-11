@@ -1,0 +1,186 @@
+,Country,Year,% using internet
+5,Micronesia,2020,40.1
+11,Afghanistan,2020,18.4
+17,Albania,2020,72.2
+24,Algeria,2020,64.0
+31,Andorra,2020,93.2
+38,Angola,2020,32.6
+49,Antigua and Barbuda,2020,95.7
+56,Argentina,2020,85.5
+63,Armenia,2020,76.5
+74,Australia,2020,96.4
+81,Austria,2020,87.5
+88,Azerbaijan,2020,84.6
+95,Bahamas,2020,92.5
+102,Bahrain,2020,99.7
+109,Bangladesh,2020,32.9
+116,Barbados,2020,82.5
+122,Belarus,2020,85.1
+129,Belgium,2020,91.5
+136,Belize,2020,59.5
+143,Benin,2020,28.2
+154,Bhutan,2020,79.9
+161,Bolivia,2020,59.9
+168,Bosnia and Herzegovina,2020,73.2
+175,Botswana,2020,72.7
+182,Brazil,2020,81.3
+190,Brunei,2020,96.1
+197,Bulgaria,2020,70.2
+204,Burkina Faso,2020,13.9
+211,Burundi,2020,3.8
+218,Cabo Verde,2020,63.2
+225,Cambodia,2020,53.7
+232,Cameroon,2020,45.5
+239,Canada,2020,92.3
+249,Central African Republic,2020,8.6
+256,Chad,2020,11.7
+263,Chile,2020,86.4
+270,China,2020,70.1
+277,"China, Hong Kong SAR",2020,92.4
+284,"China, Macao SAR",2020,88.3
+291,Colombia,2020,70.9
+298,Comoros,2020,21.2
+313,Costa Rica,2020,80.5
+320,Côte d’Ivoire,2020,41.4
+327,Croatia,2020,78.3
+334,Cuba,2020,71.1
+341,Cyprus,2020,90.8
+348,Czech Republic,2020,81.3
+358,Democratic Republic of the Congo,2020,22.9
+365,Denmark,2020,96.5
+372,Djibouti,2020,61.3
+379,Dominica,2020,77.1
+386,Dominican Republic,2020,82.2
+393,Ecuador,2020,70.7
+400,Egypt,2020,71.9
+407,El Salvador,2020,54.6
+414,Equatorial Guinea,2020,53.8
+420,Eritrea,2020,14.2
+427,Estonia,2020,89.1
+434,Swaziland,2020,56.4
+441,Ethiopia,2020,16.4
+456,Fiji,2020,84.9
+463,Finland,2020,92.2
+470,France,2020,84.7
+483,Gabon,2020,70.8
+490,Gambia,2020,31.6
+497,Georgia,2020,72.5
+504,Germany,2020,89.8
+511,Ghana,2020,56.7
+521,Greece,2020,78.1
+532,Grenada,2020,74.7
+545,Guatemala,2020,47.5
+554,Guinea,2020,28.8
+561,Guinea-Bissau,2020,27.9
+568,Guyana,2020,81.8
+575,Haiti,2020,36.4
+582,Honduras,2020,43.5
+589,Hungary,2020,84.8
+596,Iceland,2020,99.5
+603,India,2020,43.4
+610,Indonesia,2020,53.7
+617,Iran,2020,75.6
+623,Iraq,2020,45.8
+630,Ireland,2020,92.0
+637,Israel,2020,90.1
+644,Italy,2020,70.5
+651,Jamaica,2020,79.4
+658,Japan,2020,90.2
+667,Jordan,2020,75.4
+674,Kazakhstan,2020,85.9
+681,Kenya,2020,25.5
+688,Kiribati,2020,45.1
+695,Kuwait,2020,99.1
+702,Kyrgyzstan,2020,72.0
+709,Laos,2020,54.0
+716,Latvia,2020,88.9
+723,Lebanon,2020,83.1
+730,Lesotho,2020,42.9
+736,Liberia,2020,28.0
+746,Liechtenstein,2020,94.4
+753,Lithuania,2020,83.1
+760,Luxembourg,2020,98.8
+767,Madagascar,2020,13.7
+774,Malawi,2020,18.9
+781,Malaysia,2020,89.6
+788,Maldives,2020,77.6
+795,Mali,2020,27.9
+802,Malta,2020,86.9
+815,Mauritania,2020,53.5
+822,Mauritius,2020,64.9
+830,Mexico,2020,71.5
+837,Monaco,2020,84.7
+843,Mongolia,2020,65.6
+849,Montenegro,2020,77.6
+857,Morocco,2020,84.1
+864,Mozambique,2020,16.3
+870,Myanmar,2020,42.0
+877,Namibia,2020,48.8
+880,Nauru,2020,76.7
+887,Nepal,2020,45.8
+894,Netherlands,2020,91.3
+905,New Zealand,2020,92.9
+912,Nicaragua,2020,53.4
+919,Niger,2020,21.5
+926,Nigeria,2020,51.5
+936,Macedonia,2020,81.4
+943,Norway,2020,97.0
+950,Oman,2020,95.2
+957,Other non-specified areas,2020,89.0
+963,Pakistan,2020,18.9
+970,Panama,2020,65.5
+977,Papua New Guinea,2020,27.7
+984,Paraguay,2020,74.0
+991,Peru,2020,65.3
+998,Philippines,2020,47.1
+1005,Poland,2020,83.2
+1012,Portugal,2020,78.3
+1024,Qatar,2020,99.7
+1031,South Korea,2020,96.5
+1038,Moldova,2020,59.2
+1047,Romania,2020,78.5
+1054,Russia,2020,85.0
+1061,Rwanda,2020,23.8
+1071,Saint Kitts and Nevis,2020,80.4
+1078,Saint Lucia,2020,77.5
+1085,Saint Vincent & Grenadines,2020,80.4
+1092,Samoa,2020,69.2
+1097,San Marino,2020,70.5
+1104,Sao Tome and Principe,2020,40.3
+1111,Saudi Arabia,2020,97.9
+1118,Senegal,2020,47.2
+1124,Republic of Serbia,2020,78.4
+1131,Seychelles,2020,75.5
+1138,Sierra Leone,2020,18.0
+1144,Singapore,2020,92.0
+1151,Slovakia,2020,89.9
+1158,Slovenia,2020,86.6
+1165,Solomon Islands,2020,35.9
+1175,South Africa,2020,70.3
+1179,South Sudan,2020,6.5
+1185,Spain,2020,93.2
+1191,Sri Lanka,2020,59.2
+1201,Sudan,2020,28.4
+1207,Suriname,2020,62.1
+1214,Sweden,2020,94.5
+1221,Switzerland,2020,94.4
+1228,Syrian Arab Republic,2020,35.8
+1238,Thailand,2020,77.8
+1244,East Timor,2020,34.1
+1251,Togo,2020,29.1
+1258,Tonga,2020,66.6
+1265,Trinidad and Tobago,2020,78.7
+1272,Tunisia,2020,72.8
+1279,Türkiye,2020,77.7
+1295,Uganda,2020,6.1
+1302,Ukraine,2020,75.0
+1309,United Arab Emirates,2020,100.0
+1316,England,2020,94.8
+1323,United Republic of Tanzania,2020,23.4
+1330,USA,2020,90.6
+1341,Uruguay,2020,86.3
+1348,Uzbekistan,2020,71.1
+1355,Vanuatu,2020,53.3
+1366,Vietnam,2020,70.3
+1380,Zambia,2020,18.1
+1387,Zimbabwe,2020,29.3

@@ -2,8 +2,9 @@
   import { onMount } from 'svelte';
   import * as d3 from 'd3';
 
+  function myScript(selectedYear) {
   let svg;
-  let selectedYear = 2021; 
+  //let selectedYear = 2021; 
   let countryData = {}; 
 
   onMount(() => {
@@ -27,9 +28,10 @@
     // Load external data and draw the map
     Promise.all([
       d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson"),
-      d3.csv("https://raw.githubusercontent.com/adalinama/dsc106-project3/main/2021_data.csv")
+      d3.csv(`https://raw.githubusercontent.com/adalinama/dsc106-project3/main/${selectedYear}_data.csv`)
     ]).then(([mapData, internetData]) => {
      
+      
       prepareCountryData(internetData);
 
       
@@ -51,10 +53,9 @@
     });
   });
 
-
   function prepareCountryData(internetData) {
     internetData.forEach(d => {
-      const countryName = d["Region or Country Name"];
+      const countryName = d["Country"];
       const year = +d.Year;
       const percentage = +d["% using internet"];
       if (year === selectedYear) {
@@ -114,9 +115,15 @@
       .style("stroke", "#fff")
       .style("stroke-width", "1px");
   }
+  }
+  let selectedYear = 2005;
+  myScript(selectedYear);
 
   function changeYear(year) {
     selectedYear = year;
+    console.log(selectedYear);
+    return myScript(selectedYear);
+  
   }
 </script>
 
