@@ -27,7 +27,7 @@
     // Load external data and draw the map
     Promise.all([
       d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson"),
-      d3.csv("https://raw.githubusercontent.com/adalinama/dsc106-project3/main/internet_data_cleaned.csv")
+      d3.csv("https://raw.githubusercontent.com/adalinama/dsc106-project3/main/2021_data.csv")
     ]).then(([mapData, internetData]) => {
      
       prepareCountryData(internetData);
