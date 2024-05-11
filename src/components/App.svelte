@@ -1,10 +1,10 @@
 <script>
-  import { onMount } from 'svelte';
+  import { onMount, setContext } from 'svelte';
   import * as d3 from 'd3';
 
   
   let svg;
-  let selectedYear = 2000; 
+  let selectedYear = 2021; 
   let countryData = {}; 
   onMount(() => {
     const width = window.innerWidth; 
@@ -12,12 +12,14 @@
 
     // The svg
     svg = d3.select("#my_dataviz")
-      .attr("width", width)
-      .attr("height", height)
-      .call(d3.zoom().on("zoom", () => {
-        svg.attr("transform", d3.event.transform);
-      }))
-      .append("g");
+  .attr("width", width)
+  .attr("height", height)
+  .call(d3.zoom().on("zoom", () => {
+    svg.attr("transform", d3.event.transform);
+  }))
+  .append("g");
+
+      
 
     // Map and projection
     const projection = d3.geoNaturalEarth1()
@@ -26,15 +28,18 @@
 
     
     // Load external data and draw the map
+    updateMapData(selectedYear, projection);
+  });
+
+  function updateMapData(year, projection) {
     Promise.all([
       d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson"),
-      d3.csv(`https://raw.githubusercontent.com/adalinama/dsc106-project3/main/${selectedYear}_data.csv`)
+      d3.csv(`https://raw.githubusercontent.com/adalinama/dsc106-project3/main/${year}_data.csv`)
     ]).then(([mapData, internetData]) => {
-     
-      
       prepareCountryData(internetData);
 
-      
+      svg.selectAll("path").remove(); // Remove existing map paths
+
       svg.selectAll("path")
         .data(mapData.features)
         .enter().append("path")
@@ -51,10 +56,11 @@
           .on("mouseover", handleMouseOver)
           .on("mouseout", handleMouseOut);
     });
-  });
+  }
     
 
   function prepareCountryData(internetData) {
+    countryData = {}; // Clear existing country data
     internetData.forEach(d => {
       const countryName = d["Country"];
       const year = +d.Year;
@@ -121,8 +127,10 @@
 
   function changeYear(year) {
     selectedYear = year;
-
+    updateMapData(selectedYear, d3.geoNaturalEarth1().scale(window.innerWidth / 1.3 / Math.PI).translate([window.innerWidth / 2, window.innerHeight / 2]));
   }
+
+  
 </script>
 
 <main>
@@ -219,8 +227,8 @@
     border: 1px solid #000;
     margin-bottom: 10px;
     display: flex;
-    align-items: center; /* Center the gradient rectangle vertically */
-    justify-content: center; /* Center the gradient rectangle horizontally */
+    align-items: center; 
+    justify-content: center;
     margin: auto;
   }
 
@@ -280,4 +288,6 @@
     text-align: left;
     position: relative;
   }
+
+  
 </style>
