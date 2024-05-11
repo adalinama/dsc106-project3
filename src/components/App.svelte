@@ -2,11 +2,10 @@
   import { onMount } from 'svelte';
   import * as d3 from 'd3';
 
-  function myScript(selectedYear) {
+  
   let svg;
-  //let selectedYear = 2021; 
+  let selectedYear = 2000; 
   let countryData = {}; 
-
   onMount(() => {
     const width = window.innerWidth; 
     const height = window.innerHeight; 
@@ -25,6 +24,7 @@
       .scale(width / 1.3 / Math.PI)
       .translate([width / 2, height / 2]);
 
+    
     // Load external data and draw the map
     Promise.all([
       d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson"),
@@ -52,6 +52,7 @@
           .on("mouseout", handleMouseOut);
     });
   });
+    
 
   function prepareCountryData(internetData) {
     internetData.forEach(d => {
@@ -115,15 +116,12 @@
       .style("stroke", "#fff")
       .style("stroke-width", "1px");
   }
-  }
-  let selectedYear = 2005;
-  myScript(selectedYear);
+  
+  
 
   function changeYear(year) {
     selectedYear = year;
-    console.log(selectedYear);
-    return myScript(selectedYear);
-  
+
   }
 </script>
 
@@ -215,7 +213,7 @@
   }
 
   .rectangle {
-    width: 25px;
+    width: 50px;
     height: 300px; 
     background-color: #fff;
     border: 1px solid #000;
@@ -223,6 +221,7 @@
     display: flex;
     align-items: center; /* Center the gradient rectangle vertically */
     justify-content: center; /* Center the gradient rectangle horizontally */
+    margin: auto;
   }
 
   .gradient-rectangle {
@@ -232,12 +231,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    justify-content: center;
   }
 
   .gradient-rectangle p {
     text-align: center;
-    margin: 0;
     flex-grow: 1;
+    margin-bottom: 105px;
+    top: 45px;
   }
 
   .year-buttons {
