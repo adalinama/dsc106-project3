@@ -150,6 +150,10 @@
       </div>
     </div>
   </div>
+  <div class="source">
+    <p>Source: Department of Economic and Social Affairs of the UN Secretariat</p>
+  </div>
+
   <div class="year-buttons">
     <button class="hoverable {selectedYear === 2000 ? 'selected' : ''}" on:click={() => changeYear(2000)}>2000</button>
     <button class="hoverable {selectedYear === 2005 ? 'selected' : ''}" on:click={() => changeYear(2005)}>2005</button>
@@ -197,6 +201,13 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+  }
+  .source {
+    position: absolute;
+    bottom: 0px; 
+    left: 80%;
+    font-family: "Nunito", sans-serif; 
+    font-size: small;
   }
 
   svg {
@@ -300,6 +311,7 @@
     text-align: left;
     position: relative;
   }
+
 
   
 </style>
