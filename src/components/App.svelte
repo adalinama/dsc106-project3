@@ -209,7 +209,7 @@
     width: 300px;
     height: 80px;
     position: absolute;
-    bottom: 50px;
+    bottom: 10px;
     left: 5px;
     background-color: rgba(255, 255, 255, 0.7); 
     padding: 5px;
