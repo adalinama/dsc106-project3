@@ -4,7 +4,7 @@
 
   
   let svg;
-  let selectedYear = 2021; 
+  let selectedYear = 2000; 
   let countryData = {}; 
   onMount(() => {
     const width = window.innerWidth; 
@@ -51,7 +51,7 @@
           .attr("d", d3.geoPath()
             .projection(projection)
           )
-          .style("stroke", "#444444")
+          .style("stroke", "black")
           .style("stroke-width", "1px")
           .on("mouseover", handleMouseOver)
           .on("mouseout", handleMouseOut);
@@ -96,8 +96,8 @@
 
    
     d3.select(this)
-      .style("stroke", "orange")
-      .style("stroke-width", "2px");
+      .style("stroke", "black")
+      .style("stroke-width", "2.2px");
 
 
     const tooltipWidth = tooltip.node().getBoundingClientRect().width;
@@ -119,7 +119,7 @@
 
     
     d3.select(this)
-      .style("stroke", "#fff")
+      .style("stroke", "black")
       .style("stroke-width", "1px");
   }
   
@@ -142,12 +142,10 @@
   <div class="container">
     <svg id="my_dataviz"></svg>
     <div class="legend">
-      <h2>Legend</h2>
+      <h2>% of Population Using the Internet</h2>
       <div class="rectangle">
         <div class="gradient-rectangle">
-          <p style="color:#CFD8E4; text-align: center;">100%</p>
-          <p style="text-align: center;">50%</p>
-          <p style="text-align: center;">0%</p>
+          <p style="color: #000000; text-align: center;">0%<span class="space"></span>50%<span class="space"></span><span style="color: #D1D8E5;">100%</span></p>
         </div>
       </div>
     </div>
@@ -208,9 +206,11 @@
   }
 
   .legend {
+    width: 300px;
+    height: 80px;
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 50px;
+    left: 5px;
     background-color: rgba(255, 255, 255, 0.7); 
     padding: 5px;
     border: 1px solid #ccc;
@@ -220,11 +220,13 @@
 
   .legend h2 {
     margin-top: 0;
+    font-size: medium;
+    text-align: center;
   }
 
   .rectangle {
-    width: 50px;
-    height: 300px; 
+    width: 300px;
+    height: 50px; 
     background-color: #fff;
     border: 1px solid #000;
     margin-bottom: 10px;
@@ -237,7 +239,7 @@
   .gradient-rectangle {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(#093A7A, white);
+    background-image: linear-gradient(to left, #093A7A, white);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -249,6 +251,9 @@
     flex-grow: 1;
     margin-bottom: 105px;
     top: 45px;
+  }
+  .space {
+    margin-right: 95px;
   }
 
   .year-buttons {
