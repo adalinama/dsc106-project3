@@ -96,7 +96,7 @@
 
    
     d3.select(this)
-      .style("stroke", "black")
+      .style("stroke", "orange")
       .style("stroke-width", "2.2px");
 
 
@@ -237,7 +237,7 @@
 
   .rectangle {
     width: 300px;
-    height: 50px; 
+    height: 30px; 
     background-color: #fff;
     border: 1px solid #000;
     margin-bottom: 10px;
