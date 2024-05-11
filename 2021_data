@@ -1,0 +1,182 @@
+,Country,Year,% using internet
+6,Micronesia,2021,40.4
+18,Albania,2021,79.3
+25,Algeria,2021,70.8
+32,Andorra,2021,93.9
+39,Angola,2021,32.6
+50,Antigua and Barbuda,2021,95.7
+57,Argentina,2021,87.2
+64,Armenia,2021,78.6
+75,Australia,2021,96.2
+82,Austria,2021,92.5
+89,Azerbaijan,2021,86.0
+96,Bahamas,2021,94.3
+103,Bahrain,2021,100.0
+110,Bangladesh,2021,38.9
+117,Barbados,2021,85.8
+123,Belarus,2021,86.9
+130,Belgium,2021,92.8
+137,Belize,2021,62.0
+144,Benin,2021,34.0
+155,Bhutan,2021,85.6
+162,Bolivia,2021,66.0
+169,Bosnia and Herzegovina,2021,75.7
+176,Botswana,2021,73.5
+183,Brazil,2021,80.7
+191,Brunei,2021,98.1
+198,Bulgaria,2021,75.3
+205,Burkina Faso,2021,21.6
+212,Burundi,2021,5.8
+219,Cabo Verde,2021,69.8
+226,Cambodia,2021,60.2
+233,Cameroon,2021,45.6
+240,Canada,2021,92.8
+250,Central African Republic,2021,10.6
+257,Chad,2021,17.9
+264,Chile,2021,90.2
+271,China,2021,73.1
+278,"China, Hong Kong SAR",2021,93.1
+285,"China, Macao SAR",2021,88.5
+292,Colombia,2021,73.0
+299,Comoros,2021,27.3
+314,Costa Rica,2021,82.8
+321,Côte d’Ivoire,2021,45.4
+328,Croatia,2021,81.3
+335,Cuba,2021,71.1
+342,Cyprus,2021,90.8
+349,Czech Republic,2021,82.7
+359,Democratic Republic of the Congo,2021,22.9
+366,Denmark,2021,98.9
+373,Djibouti,2021,68.9
+380,Dominica,2021,80.9
+387,Dominican Republic,2021,85.2
+394,Ecuador,2021,76.2
+401,Egypt,2021,72.1
+408,El Salvador,2021,62.9
+415,Equatorial Guinea,2021,53.9
+421,Eritrea,2021,21.7
+428,Estonia,2021,91.0
+435,Swaziland,2021,58.9
+442,Ethiopia,2021,16.7
+457,Fiji,2021,87.7
+464,Finland,2021,92.8
+471,France,2021,86.1
+484,Gabon,2021,71.7
+491,Gambia,2021,33.0
+498,Georgia,2021,76.4
+505,Germany,2021,91.4
+512,Ghana,2021,68.2
+522,Greece,2021,78.5
+533,Grenada,2021,77.8
+546,Guatemala,2021,50.8
+555,Guinea,2021,34.7
+562,Guinea-Bissau,2021,35.2
+569,Guyana,2021,84.8
+576,Haiti,2021,38.9
+583,Honduras,2021,48.1
+590,Hungary,2021,88.6
+597,Iceland,2021,99.7
+604,India,2021,46.3
+611,Indonesia,2021,62.1
+618,Iran,2021,78.6
+624,Iraq,2021,48.9
+631,Ireland,2021,95.2
+638,Israel,2021,90.3
+645,Italy,2021,74.9
+652,Jamaica,2021,82.4
+659,Japan,2021,82.9
+668,Jordan,2021,82.8
+675,Kazakhstan,2021,90.9
+682,Kenya,2021,28.8
+689,Kiribati,2021,53.6
+696,Kuwait,2021,99.7
+703,Kyrgyzstan,2021,77.9
+710,Laos,2021,62.0
+717,Latvia,2021,91.2
+724,Lebanon,2021,86.6
+731,Lesotho,2021,48.0
+737,Liberia,2021,33.6
+747,Liechtenstein,2021,95.6
+754,Lithuania,2021,86.9
+761,Luxembourg,2021,98.7
+768,Madagascar,2021,19.7
+775,Malawi,2021,24.4
+782,Malaysia,2021,96.8
+789,Maldives,2021,85.8
+796,Mali,2021,34.5
+803,Malta,2021,87.5
+816,Mauritania,2021,58.8
+823,Mauritius,2021,67.6
+831,Mexico,2021,75.6
+838,Monaco,2021,86.1
+844,Mongolia,2021,84.3
+850,Montenegro,2021,82.2
+858,Morocco,2021,88.1
+865,Mozambique,2021,17.4
+871,Myanmar,2021,44.0
+878,Namibia,2021,53.0
+881,Nauru,2021,83.9
+888,Nepal,2021,51.6
+895,Netherlands,2021,92.1
+906,New Zealand,2021,95.9
+913,Nicaragua,2021,57.1
+920,Niger,2021,22.4
+927,Nigeria,2021,55.4
+937,Macedonia,2021,83.0
+944,Norway,2021,99.0
+951,Oman,2021,96.4
+958,Other non-specified areas,2021,90.1
+964,Pakistan,2021,21.0
+971,Panama,2021,67.5
+978,Papua New Guinea,2021,32.1
+985,Paraguay,2021,77.0
+992,Peru,2021,71.1
+999,Philippines,2021,52.7
+1006,Poland,2021,85.4
+1013,Portugal,2021,82.3
+1025,Qatar,2021,100.0
+1032,South Korea,2021,97.6
+1039,Moldova,2021,61.3
+1048,Romania,2021,83.6
+1055,Russia,2021,88.2
+1062,Rwanda,2021,30.5
+1072,Saint Kitts and Nevis,2021,79.5
+1079,Saint Lucia,2021,78.1
+1086,Saint Vincent & Grenadines,2021,84.9
+1093,Samoa,2021,78.2
+1098,San Marino,2021,74.9
+1105,Sao Tome and Principe,2021,51.2
+1112,Saudi Arabia,2021,100.0
+1119,Senegal,2021,58.1
+1125,Republic of Serbia,2021,81.2
+1132,Seychelles,2021,81.6
+1145,Singapore,2021,91.1
+1152,Slovakia,2021,88.9
+1159,Slovenia,2021,89.0
+1166,Solomon Islands,2021,36.1
+1176,South Africa,2021,72.3
+1186,Spain,2021,93.9
+1192,Sri Lanka,2021,66.7
+1208,Suriname,2021,65.9
+1215,Sweden,2021,88.3
+1222,Switzerland,2021,95.6
+1239,Thailand,2021,85.3
+1245,East Timor,2021,39.5
+1252,Togo,2021,35.0
+1259,Tonga,2021,71.6
+1266,Trinidad and Tobago,2021,79.0
+1273,Tunisia,2021,79.0
+1280,Türkiye,2021,81.4
+1289,Tuvalu,2021,71.6
+1296,Uganda,2021,10.3
+1303,Ukraine,2021,79.2
+1310,United Arab Emirates,2021,100.0
+1317,England,2021,96.7
+1324,United Republic of Tanzania,2021,31.6
+1331,USA,2021,91.8
+1342,Uruguay,2021,90.1
+1349,Uzbekistan,2021,76.6
+1356,Vanuatu,2021,66.3
+1367,Vietnam,2021,74.2
+1381,Zambia,2021,21.2
+1388,Zimbabwe,2021,34.8
