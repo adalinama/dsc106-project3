@@ -107,10 +107,9 @@
   }
 
   function handleMouseOut(event, d) {
-    // Remove tooltip when mouse leaves the country
     d3.select(".tooltip").remove();
 
-    // Restore stroke color and width
+    
     d3.select(this)
       .style("stroke", "#fff")
       .style("stroke-width", "1px");
@@ -143,7 +142,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    position: relative; /* Required for absolute positioning */
+    position: relative; 
   }
 
   svg {
@@ -154,15 +153,15 @@
 
   .year-buttons {
     position: absolute;
-    bottom: 20px; /* Adjust as needed */
+    bottom: 20px; 
     left: 50%;
-    transform: translateX(-50%); /* Center horizontally */
+    transform: translateX(-50%); 
     display: flex;
-    justify-content: center; /* Center buttons horizontally */
+    justify-content: center;
   }
 
   .year-buttons button {
-    margin: 0 5px; /* Add space between buttons */
+    margin: 0 5px; 
   }
 
   .tooltip {
